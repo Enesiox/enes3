@@ -326,12 +326,12 @@ client.on('message', async (message) => {
     if (message.content.startsWith('!yardım')) {
         let button = new disbut.MessageButton()
         .setStyle("green")
-        .setLabel('Davet')
+        .setLabel('Yardım') 
         .setID('click_to_function') 
 
         let button2 = new disbut.MessageButton()
         .setStyle('green')
-        .setLabel('Yardım') 
+        .setLabel('Davet')
         .setID('click_to_function2') 
         
 
@@ -345,7 +345,7 @@ message.channel.send("Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabi
 
 client.on('clickButton', async (button) => {
   if (button.id === 'click_to_function') {
-    button.channel.send(`• !kullanıcı: **Kullanıcı yardım menüsünü gösterir.**\n > • !moderasyon: **Moderasyon yardım menüsünü gösterir.**\n > • !kayıtsistemi: ** Kayıt sistemi yardım menüsünü gösterir.**\n > • !korumasistemi** Koruma sistemi yardım menüsünü gösterir.**\n > • !logosistemi: ** Logo sistemi yardım menüsünü gösterir.**\n > • !çekilişsistemi: ** Çekiliş sistemi yardım menüsünü gösterir.**\n > • !özelodasistemi: ** Özel Oda sistemi yardım menüsünü gösterir.** \n > • !profilsiistemi: **Profila sistemi yardım menüsünü gösterir.** \n > • !ekonomisistemi: ** Ekonomi sistemi yardım menüsünü gösterir.**  \n > • !radyo: ** Radyo sistemi yardım menüsünü gösterir.**`);
+    button.channel.send(`• !kullanıcı: **Kullanıcı yardım menüsünü gösterir.**\n > • !moderasyon: **Moderasyon yardım menüsünü gösterir.**\n > • !kayıtsistemi: ** Kayıt sistemi yardım menüsünü gösterir.**\n > • !korumasistemi** Koruma sistemi yardım menüsünü gösterir.**\n > • !logosistemi: ** Logo sistemi yardım menüsünü gösterir.**\n > • !çekilişsistemi: ** Çekiliş sistemi yardım menüsünü gösterir.**\n > • !özelodasistemi: ** Özel Oda sistemi yardım menüsünü gösterir.** \n > • !profilsiistemi: **Profila sistemi yardım menüsünü gösterir.** \n > • !ekonomisistemi: ** Ekonomi sistemi yardım menüsünü gösterir.**  \n > • !radyo: ** Radyo sistemi yardım menüsünü gösterir.** \n > • !müzik: ** Müzik Sistemini Gösteir!**`);
   }
     if (button.id === 'click_to_function2') {
     button.channel.send(`[Davet Et](Davet Linki)`);
@@ -354,135 +354,7 @@ client.on('clickButton', async (button) => {
 
 //////////yardım son///////
 
-////////////ekonomi yardım///
 
-
-client.on('message', async (message) => {
-    if (message.content.startsWith('!ekonomiyardım')) {
-        let button = new disbut.MessageButton()
-        .setStyle("green")
-        .setLabel('Davet')
-        .setID('click_to_function') 
-
-        let button2 = new disbut.MessageButton()
-        .setStyle('green')
-        .setLabel('Yardım') 
-        .setID('click_to_function2') 
-        
-
-message.channel.send("Ekonomi Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabilirsin", {
-  buttons:[
-                button,button2
-            ]
-        });
-    };
-});
-
-client.on('clickButton', async (button) => {
-  if (button.id === 'click_to_function') {
-    button.channel.send(` **!bilgiler** \n-> Hesap Bilgisini Gösterir
- **!bakiye** \n-> Bakiyeyi Gösterir
- **!günlükpara** \n->  Günlük Para Ödülü Alırsın
- **!hesap-oluştur** \n->  Hesap Oluşturursun
- **!hesap-sil** \n->  Hesap Silersin
- **!kasa-aç** \n->  Kasa Açarsın
-  **!kasa-bilgi** \n->  Kasalar Hakkında Bilgi Alırsın
- **!transfer** \n->  Belirtilen Kişiye Belirtilen Miktarda Para Gönderirsin`);
-  }
-    if (button.id === 'click_to_function2') {
-    button.channel.send(`[Davet Et](Davet Linki)`);
-  }
-});
-
-//////////ekonomi yardım son///////
-
-////////////ekonomi yardım///
-
-
-client.on('message', async (message) => {
-    if (message.content.startsWith('!kayıtyardım')) {
-        let button = new disbut.MessageButton()
-        .setStyle("green")
-        .setLabel('Davet')
-        .setID('click_to_function') 
-
-        let button2 = new disbut.MessageButton()
-        .setStyle('green')
-        .setLabel('Yardım') 
-        .setID('click_to_function2') 
-        
-
-message.channel.send("Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabilirsin", {
-  buttons:[
-                button,button2
-            ]
-        });
-    };
-});
-
-client.on('clickButton', async (button) => {
-  if (button.id === 'click_to_function') {
-    button.channel.send(`**!alınacak-rol sıfırla** \n-> Kayıt edilen kişiden alınacak rolü sıfırlar.
- **!kayıt-kanal #kanal** \n-> Kayıtın yapılacağı kanalı belirlersiniz.
- **!kayıt-kanal sıfırla** \n-> Kayıtın yapılacağı kanalı sıfırlarsınız.
- **!kayıt-hg #kanal** \n-> Kayıt hoş geldin kanalını ayarlarsınız.
- **!kayıt-hg sıfırla** \n-> Kayıt hoş geldin kanalını sıfırlarsınız.
- **!kayıt-yetkili @rol** \n-> Kayıt edebilecek yetkiyi ayarlar.
- **!kayıt-yetkili sıfırla** \n-> Kayıt edebilecek yetkiyi sıfırlar.
- **!erkek-rol @rol** \n-> Kayıt edilince verilecek erkek rolü ayarlar.
- **!erkek-rol sıfırla** \n-> Kayıt edilince verilecek erkek rolünü sıfırlar.
- **!kız-rol @rol** \n-> Kayıt edilince verilecek kız rolü ayarlar.
- **!kız-rol sıfırla** \n-> Kayıt edilince verilecek kız rolünü sıfırlar.
- **!erkek @kullanıcı isim yaş** \n-> Erkekleri kayıt etmeye yarar.
-**!kız @kullanıcı isim yaş** \n-> Kızları kayıt etmeye yarar.`);
-  }
-    if (button.id === 'click_to_function2') {
-    button.channel.send(`[Davet Et](Davet Linki)`);
-  }
-});
-
-//////////ekonomi yardım son///////
-
-////////////ekonomi yardım///
-
-
-client.on('message', async (message) => {
-    if (message.content.startsWith('!korumayardım')) {
-        let button = new disbut.MessageButton()
-        .setStyle("green")
-        .setLabel('Davet')
-        .setID('click_to_function') 
-
-        let button2 = new disbut.MessageButton()
-        .setStyle('green')
-        .setLabel('Yardım') 
-        .setID('click_to_function2') 
-        
-
-message.channel.send("Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabilirsin", {
-  buttons:[
-                button,button2
-            ]
-        });
-    };
-});
-
-client.on('clickButton', async (button) => {
-  if (button.id === 'click_to_function') {
-    button.channel.send(`!ban-koruma #kanal** \n-> Ban koruma sistemini açar.
- **!ban-koruma-sıfırla** \n-> Ban koruma sistemini sıfırlar.
- **!kanal-koruma #kanal** \n-> Kanal koruma sistemini açar.
- **!kanal-koruma-sıfırla** \n-> Kanal koruma sistemini sıfırlar.
- **!rol-koruma #kanal** \n-> Rol koruma sistemini açar.
- **!rol-koruma-sıfırla** \n-> Rol koruma sistemini sıfırlar.
- **!spam-koruma** \n-> Spam koruma sistemini açar.
- **!spam-koruma-kapat** \n-> Spam koruma sistemini kapatır.`);
-  }
-    if (button.id === 'click_to_function2') {
-    button.channel.send(`[Davet Et](Davet Linki)`);
-  }
-});
-//////////ekonomi yardım son///////
 /// modlog sistemi
 
 client.on("messageDelete", async (message) => {
