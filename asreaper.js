@@ -316,6 +316,87 @@ client.on("roleDelete", async role => {
   }
 });
 
+
+
+////////////yardım///
+
+const disbut = require('discord-buttons')(client);
+
+client.on('message', async (message) => {
+    if (message.content.startsWith('!yardım')) {
+        let button = new disbut.MessageButton()
+        .setStyle("green")
+        .setLabel('Davet')
+        .setID('click_to_function') 
+
+        let button2 = new disbut.MessageButton()
+        .setStyle('green')
+        .setLabel('Yardım') 
+        .setID('click_to_function2') 
+        
+
+message.channel.send("Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabilirsin", {
+  buttons:[
+                button,button2
+            ]
+        });
+    };
+});
+
+client.on('clickButton', async (button) => {
+  if (button.id === 'click_to_function') {
+    button.channel.send(`• !kullanıcı: **Kullanıcı yardım menüsünü gösterir.**\n > • !moderasyon: **Moderasyon yardım menüsünü gösterir.**\n > • !kayıtsistemi: ** Kayıt sistemi yardım menüsünü gösterir.**\n > • !korumasistemi** Koruma sistemi yardım menüsünü gösterir.**\n > • !logosistemi: ** Logo sistemi yardım menüsünü gösterir.**\n > • !çekilişsistemi: ** Çekiliş sistemi yardım menüsünü gösterir.**\n > • !özelodasistemi: ** Özel Oda sistemi yardım menüsünü gösterir.** \n > • !profilsiistemi: **Profila sistemi yardım menüsünü gösterir.** \n > • !ekonomisistemi: ** Ekonomi sistemi yardım menüsünü gösterir.**  \n > • !radyo: ** Radyo sistemi yardım menüsünü gösterir.**`);
+  }
+    if (button.id === 'click_to_function2') {
+    button.channel.send(`[Davet Et](Davet Linki)`);
+  }
+});
+
+//////////yardım son///////
+
+////////////ekonomi yardım///
+
+
+client.on('message', async (message) => {
+    if (message.content.startsWith('!ekonomiyardım')) {
+        let button = new disbut.MessageButton()
+        .setStyle("green")
+        .setLabel('Davet')
+        .setID('click_to_function') 
+
+        let button2 = new disbut.MessageButton()
+        .setStyle('green')
+        .setLabel('Yardım') 
+        .setID('click_to_function2') 
+        
+
+message.channel.send("Ekonomi Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabilirsin", {
+  buttons:[
+                button,button2
+            ]
+        });
+    };
+});
+
+client.on('clickButton', async (button) => {
+  if (button.id === 'click_to_function') {
+    button.channel.send(` **!bilgiler** \n-> Hesap Bilgisini Gösterir
+ **!bakiye** \n-> Bakiyeyi Gösterir
+ **!günlükpara** \n->  Günlük Para Ödülü Alırsın
+ **!hesap-oluştur** \n->  Hesap Oluşturursun
+ **!hesap-sil** \n->  Hesap Silersin
+ **!kasa-aç** \n->  Kasa Açarsın
+  **!kasa-bilgi** \n->  Kasalar Hakkında Bilgi Alırsın
+ **!transfer** \n->  Belirtilen Kişiye Belirtilen Miktarda Para Gönderirsin`);
+  }
+    if (button.id === 'click_to_function2') {
+    button.channel.send(`[Davet Et](Davet Linki)`);
+  }
+});
+
+//////////ekonomi yardım son///////
+
+
 /// modlog sistemi
 
 client.on("messageDelete", async (message) => {
