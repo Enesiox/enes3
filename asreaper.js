@@ -334,10 +334,18 @@ client.on('message', async (message) => {
         .setLabel('Davet')
         .setID('click_to_function2') 
         
+    
+        
+        
+      
+            
+         
+        
 
 message.channel.send("Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabilirsin", {
   buttons:[
                 button,button2
+
             ]
         });
     };
