@@ -334,12 +334,13 @@ client.on('message', async (message) => {
         .setLabel('Davet')
         .setID('click_to_function2') 
         
-    
+         let yt = new disbut.MessageButton()
+        .setStyle('url')
+        .setLabel('Gweep Craetive Youtube kanalımıza abone ol!')
+        .setURL('https://youtube.com/GweepCreativeOfficial')
+        .setID('ytt') 
         
-        
-      
-            
-         
+   
         
 
 message.channel.send("Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabilirsin", {
@@ -353,7 +354,17 @@ message.channel.send("Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabi
 
 client.on('clickButton', async (button) => {
   if (button.id === 'click_to_function') {
+    
+         let yt = new disbut.MessageButton()
+        .setStyle('url')
+        .setLabel('Gweep Craetive Youtube kanalımıza abone ol!')
+        .setURL('https://youtube.com/GweepCreativeOfficial')
+        .setID('ytt') 
+         
     button.channel.send(`• !kullanıcı: **Kullanıcı yardım menüsünü gösterir.**\n > • !moderasyon: **Moderasyon yardım menüsünü gösterir.**\n > • !kayıtsistemi: ** Kayıt sistemi yardım menüsünü gösterir.**\n > • !korumasistemi** Koruma sistemi yardım menüsünü gösterir.**\n > • !logosistemi: ** Logo sistemi yardım menüsünü gösterir.**\n > • !çekilişsistemi: ** Çekiliş sistemi yardım menüsünü gösterir.**\n > • !özelodasistemi: ** Özel Oda sistemi yardım menüsünü gösterir.** \n > • !profilsiistemi: **Profila sistemi yardım menüsünü gösterir.** \n > • !ekonomisistemi: ** Ekonomi sistemi yardım menüsünü gösterir.**  \n > • !radyo: ** Radyo sistemi yardım menüsünü gösterir.** \n > • !müzikyardım: ** Müzik Sistemini Gösteir!**`);
+    return button.message.edit({
+      button: yt
+    })
   }
     if (button.id === 'click_to_function2') {
     button.channel.send(`Botun Davet Linki`);
