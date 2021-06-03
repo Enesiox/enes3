@@ -1,9 +1,9 @@
 {
-  "//1": "Asreaper",
-  "//2": "Asreaper",
-  "name": "Asreaper",
+  "//1": "Gweep Creative",
+  "//2": "Gweep Creative",
+  "name": "Gweep Creative",
   "version": "0.0.1",
-  "description": "Asreaper",
+  "description": "Gweep Creative",
   "main": "shard.js",
   "scripts": {
     "start": "node shard.js"
