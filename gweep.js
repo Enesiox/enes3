@@ -327,22 +327,13 @@ client.on('message', async (message) => {
         let button = new disbut.MessageButton()
         .setStyle("green")
         .setLabel('Yardım') 
-        .setID('click_to_function') 
+        .setID('yardımmenü') 
 
         let button2 = new disbut.MessageButton()
         .setStyle('green')
         .setLabel('Davet')
         .setID('click_to_function2') 
         
-         let yt = new disbut.MessageButton()
-        .setStyle('url')
-        .setLabel('Gweep Craetive Youtube kanalımıza abone ol!')
-        .setURL('https://youtube.com/GweepCreativeOfficial')
-        .setID('ytt') 
-        
-   
-        
-
 message.channel.send("Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabilirsin", {
   buttons:[
                 button,button2
@@ -353,7 +344,8 @@ message.channel.send("Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabi
 });
 
 client.on('clickButton', async (button) => {
-  if (button.id === 'click_to_function') {
+  if (button.id === 'yardımmenü') {
+    await button.defer(true);
     
          let yt = new disbut.MessageButton()
         .setStyle('url')
@@ -367,7 +359,18 @@ client.on('clickButton', async (button) => {
     })
   }
     if (button.id === 'click_to_function2') {
-    button.channel.send(`Botun Davet Linki`);
+      await button.defer(true);
+      
+       let yt = new disbut.MessageButton()
+        .setStyle('url')
+        .setLabel('Gweep Craetive Youtube kanalımıza abone ol!')
+        .setURL('https://youtube.com/GweepCreativeOfficial')
+        .setID('ytt') 
+        button.channel.send(`Botu Davet Et`)
+        return button.message.edit({
+      button: yt
+    })
+   
   }
 });
 
