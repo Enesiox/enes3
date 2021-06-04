@@ -361,14 +361,14 @@ client.on('clickButton', async (button) => {
     if (button.id === 'click_to_function2') {
       await button.defer(true);
       
-       let yt = new disbut.MessageButton()
+       let davett = new disbut.MessageButton()
         .setStyle('url')
-        .setLabel('Gweep Craetive Youtube kanalımıza abone ol!')
-        .setURL('https://youtube.com/GweepCreativeOfficial')
-        .setID('ytt') 
+        .setLabel('Botu Davet Et!')
+        .setURL('https://discord.com/oauth2/authorize?client_id=&'+ client.guilds.bot.id + 'permissions=8&scope=bot')
+        .setID('davett') 
         button.channel.send(`Botu Davet Et`)
         return button.message.edit({
-      button: yt
+      button: davett
     })
    
   }
