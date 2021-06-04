@@ -3,10 +3,10 @@ let config = require("../utils/errors.js");
 
 exports.run = (client, message) => {
 
-const AsreaperEMBED = new Discord.MessageEmbed()
+const GweepEMBED = new Discord.MessageEmbed()
 
 .setColor("GREEN")
-.setTitle(" **Asreaper**")
+.setTitle(" **Gweep Creative**")
 .setDescription(`
 
 ** Profil Sistemi | Komut Listesi**
@@ -23,7 +23,7 @@ const AsreaperEMBED = new Discord.MessageEmbed()
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();
 
-return message.channel.send(AsreaperEMBED)
+return message.channel.send(GweepEMBED)
 .then; 
 
 };

@@ -19,7 +19,7 @@ if(message.author.id !== "602196747879448577") if(message.author.id !== "6021967
     .setColor("RANDOM")
     .setDescription(`<@${user}> adlı kullanıcı başarıyla karalisteden çıkartıldı!`)
   return message.channel.send({embed: embed})
- //if (client.users.cache.get(user).send(` <@${message.author.id}> adlı yetkilimiz tarafından beyazlisteye alındın! Artık Asreaperin komutlarını kullanabilirsin.`)){
+ //if (client.users.cache.get(user).send(` <@${message.author.id}> adlı yetkilimiz tarafından beyazlisteye alındın! Artık Gweep Creative komutlarını kullanabilirsin.`)){
  // } else return
   
   

@@ -1,6 +1,6 @@
 const AsreaperDiscord = require('discord.js');
 exports.run = (client, message) => {
-  const AsreaperEmbed = new AsreaperDiscord.MessageEmbed()
+  const GweepEmbed = new GweepDiscord.MessageEmbed()
   .setColor("BLUE")
   .setTimestamp()
   .setImage(client.users.cache.random().displayAvatarURL({ display: true, dynamic: true }))

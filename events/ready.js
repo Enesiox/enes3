@@ -8,15 +8,15 @@ module.exports = client => {
  setInterval(function() {
 }, 8000);
   var msgArray = [
-"Asreaper",
-"Asreaper1",
-"Asreaper2",
-    "Asreaper3"
+"Gweep Creative",
+"Abone OL!",
+"Like AT!",
+    "Gweep Creative Sunar"
  ];
 
  setInterval(() => {
   var rastgeleOyun = Math.floor(Math.random() * msgArray.length);
-  client.user.setActivity(`${msgArray[rastgeleOyun]}`, { type: 'STREAMING' ,  url: 'https://www.twitch.tv/mbasreaper' })
+  client.user.setActivity(`${msgArray[rastgeleOyun]}`, { type: 'STREAMING' ,  url: 'https://www.twitch.tv/gweepcreative' })
 }, 5000);
-    console.log(`Bot Hazır | youtube.com/asreaper`);
+    console.log(`Bot Hazır | youtube.com/GweepCreativeOfficial`);
 }

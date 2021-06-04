@@ -1,11 +1,11 @@
-const AsreaperDiscord = require('discord.js');
-const AsreaperClient = new AsreaperDiscord.Client();
+const GweepDiscord = require('discord.js');
+const GweepClient = new GweepDiscord.Client();
 exports.run = (client, message) => {
-  const AsreaperEmbed = new AsreaperDiscord.MessageEmbed();
-  AsreaperEmbed.setColor(0x36393F)
-  AsreaperEmbed.setDescription(` Asreaperi davet etmek için [buraya](Link) tıkla!`)
+  const GweepEmbed = new GweepDiscord.MessageEmbed();
+  GweepEmbed.setColor(0x36393F)
+  GweepEmbed.setDescription(` Gweep Creative davet etmek için [buraya](Link) tıkla!`)
 
-  message.channel.send(AsreaperEmbed)
+  message.channel.send(GweepEmbed)
 }
 exports.conf = {
   enabled: true,

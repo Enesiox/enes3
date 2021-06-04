@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
   let yas = db.fetch(`AsreaperYas_${user.id}`) || `Ayarlanmamış`
   
   
-const Asreaper = new Discord.MessageEmbed()
+const Gweep = new Discord.MessageEmbed()
 
 .setColor("#ff0000")
 .setAuthor(`${isim} ${soyisim} Adlı kişinin profili aşağıda bulunuyor.`)
@@ -33,7 +33,7 @@ const Asreaper = new Discord.MessageEmbed()
 
 `)
 
-return message.channel.send(Asreaper);
+return message.channel.send(Gweep);
 
 };
 exports.conf = {
