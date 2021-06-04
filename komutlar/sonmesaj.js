@@ -1,10 +1,10 @@
 const discord = require('discord.js');
 exports.run = async (client, message, args) => {
-  const asreaperembed = new discord.MessageEmbed()
+  const gweepembed = new discord.MessageEmbed()
   .setColor("BLUE")
   .setTimestamp()
   .setDescription(`https://discord.com/channels/${message.guild.id}/${message.author.lastMessageChannelID}/${message.author.lastMessageID}`)
-  message.channel.send(asreaperembed)
+  message.channel.send(gweepembed)
 }
 exports.conf = {
   enabled: true,

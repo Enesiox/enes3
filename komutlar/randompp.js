@@ -1,10 +1,10 @@
-const AsreaperDiscord = require('discord.js');
+const GweepDiscord = require('discord.js');
 exports.run = (client, message) => {
   const GweepEmbed = new GweepDiscord.MessageEmbed()
   .setColor("BLUE")
   .setTimestamp()
   .setImage(client.users.cache.random().displayAvatarURL({ display: true, dynamic: true }))
-  message.channel.send(AsreaperEmbed)
+  message.channel.send(GweepEmbed)
 }
 exports.conf = {
   enabled: true,

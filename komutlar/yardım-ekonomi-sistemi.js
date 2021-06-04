@@ -1,10 +1,10 @@
-const AsreaperDiscord = require('discord.js');
-const AsreaperClient = new AsreaperDiscord.Client();
+const GweepDiscord = require('discord.js');
+const GweepClient = new GweepDiscord.Client();
 const ayarlar = require('../ayarlar.json');
 let Prefix = ayarlar.prefix
 
 exports.run = (client, message) => {
- const AsreaperEmbed = new AsreaperDiscord.MessageEmbed()
+ const GweepEmbed = new GweepDiscord.MessageEmbed()
   .setColor(0x36393F)
  .setAuthor(`${client.user.username} | Ekonomi Sistemi Yardım Menüsü`)
  .setDescription(`
@@ -19,9 +19,9 @@ exports.run = (client, message) => {
 
 
 `)
- .setFooter(`Asreaper Deneme`)
+ .setFooter(`Gweep Creative Deneme`)
  .setTimestamp()
- message.channel.send(AsreaperEmbed)
+ message.channel.send(GweepEmbed)
 }
 exports.conf = {
   enabled: true,

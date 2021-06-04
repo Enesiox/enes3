@@ -1,10 +1,10 @@
-const AsreaperDiscord = require('discord.js');
-const AsreaperClient = new AsreaperDiscord.Client();
+const GweepDiscord = require('discord.js');
+const GweepClient = new GweepDiscord.Client();
 const ayarlar = require('../ayarlar.json');
 let prefix = ayarlar.prefix
 
 exports.run = (client, message) => {
- const AsreaperEmbed = new AsreaperDiscord.MessageEmbed()
+ const GweepEmbed = new GweepDiscord.MessageEmbed()
   .setColor(0x36393F)
  .setAuthor(`${client.user.username} | Kayıt Sistemi Yardım Menüsü`)
  .setDescription(` **${prefix}alınacak-rol @rol** \n-> Kayıt edilen kişiden alınacak rolü ayarlar.
@@ -23,7 +23,7 @@ exports.run = (client, message) => {
 **${prefix}kız @kullanıcı isim yaş** \n-> Kızları kayıt etmeye yarar.
 `)
  .setTimestamp()
- message.channel.send(AsreaperEmbed)
+ message.channel.send(GweepEmbed)
 }
 exports.conf = {
   enabled: true,
