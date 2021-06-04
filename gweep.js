@@ -17,7 +17,7 @@ const http = require("http");
 const express = require("express");
 const app = express();
 app.get("/", (request, response) => {
-  console.log("Asreaper pinglendi.");
+  console.log("Gweep Creative pinglendi.");
   response.sendStatus(200);
 });
 //app.listen(8000);
@@ -126,7 +126,7 @@ client.login(process.env.TOKEN)
 //////////////////////////////////////////////
 client.ayarlar = {
 "durum":"dnd",//online , idle , dnd 
-"oynuyor":"Youtube: ASreaper",
+"oynuyor":"Youtube: Gweep Creative",
 }
 client.ekoayarlar = {
   parabirimi: "TL", //Para Birimi TL İsterseniz Dolar Euro Vb. Para Birimleri Girebilirsiniz.
@@ -364,7 +364,7 @@ client.on('clickButton', async (button) => {
        let davett = new disbut.MessageButton()
         .setStyle('url')
         .setLabel('Botu Davet Et!')
-        .setURL('https://discord.com/oauth2/authorize?client_id=&'+ client.guilds.bot.id + 'permissions=8&scope=bot')
+        .setURL('https://discord.com/oauth2/authorize?client_id=&permissions=8&scope=bot')
         .setID('davett') 
         button.channel.send(`Botu Davet Et`)
         return button.message.edit({
@@ -736,7 +736,7 @@ client.on("guildMemberAdd", async member => {
 const Asreaper = new Discord.MessageEmbed()
 .setColor("BLUE")
 .setTimestamp()
-.setFooter(`Asreaper`)
+.setFooter(`Gweep Creative`)
 .setDescription( " **" +
           member.user.username +
           "** hoş geldin! Otomatik rolün verildi. Seninle beraber **" +
@@ -1418,7 +1418,7 @@ client.on("guildMemberAdd", async(member) => {
 client.on('guildCreate', guild => {
 
     let asreaper1 = guild.channels.filter(c => c.type === "text").random()
-    asreaper1.send("**Asreaper Botunu Sunucuya Eklediğiniz İçin Teşekkürler!** \n !yardım Yazarak Yardım Menüsüne Erişebilirsiniz!");
+    asreaper1.send("**Gweep Creative Botunu Sunucuya Eklediğiniz İçin Teşekkürler!** \n !yardım Yazarak Yardım Menüsüne Erişebilirsiniz!");
 
 });
 client.on("guildCreate", async guild => {
