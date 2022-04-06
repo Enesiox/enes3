@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
       if(list.length === 0){
         var yok = new Discord.MessageEmbed()
             .setAuthor("Hiç Bir Rank Ayarlanmamış")
-            .setDescription("Ayarlamak İçin c?rütbe-ekle @rol davetsayi");
+            .setDescription("Ayarlamak İçin e!rütbe-ekle @rol davetsayi");
             return message.channel.send(yok);
         }
 
