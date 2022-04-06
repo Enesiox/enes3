@@ -8,13 +8,13 @@ let soyisim = args.slice(0).join(" ");
 if (!soyisim)
 
 return message.channel.send(
- "**Gweep Creative**\n\n**Lütfen soy ismini belirtin.** \n・**Örnek:** **!soyisim-ayarla** `(Soyisim)` \n・`**Tüm komutlara erişmek için -> !yardım**\n\n**Asreaper** "
+ "**| E N 3 S |**\n\n**Lütfen soy ismini belirtin.** \n・**Örnek:** **e!soyisim-ayarla** `(Soyisim)` \n・`**Tüm komutlara erişmek için -> e!yardım**\n\n**ÜlkücüOcakları** "
     );
 db.set(`AsreaperSoyisim_${message.author.id}`, soyisim)
 return message.channel.send(
-    " **Gweep Creative** \n**------------------------------------**\n**• Soy isim başarıyla ayarlandı.** \n**• Belirtilen Soy İsim ->** `" +
+    " **| E N 3 S |** \n**------------------------------------**\n**• Soy isim başarıyla ayarlandı.** \n**• Belirtilen Soy İsim ->** `" +
     soyisim +
-    "` \n`• !yardım` **Yazarak tüm komutlara erişebilirsiniz.** \n **------------------------------------**\n**Gweep Creative**"
+    "` \n`• e!yardım` **Yazarak tüm komutlara erişebilirsiniz.** \n **------------------------------------**\n**| E N 3 S |**"
     );
 
 

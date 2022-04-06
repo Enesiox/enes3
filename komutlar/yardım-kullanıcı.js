@@ -8,13 +8,13 @@ exports.run = (client, message) => {
   .setColor(0x36393F)
  .setAuthor(`${client.user.username} | Kullanıcı Yardım Menüsü`)
  .setDescription(`
- **davet** \n-> Botu davet edersiniz.
- **shardbilgi** \n-> Botun shard bilgilerini gösterir.
- **pp** \n-> Etiketlediğiniz kişinin avatarını gösterir.
- **randompp** \n-> Botun ekli olduğu sunuculardaki her hangi birinin avatarını atar.
- **öneri** \n-> Bota öneri belirtirsiniz.
- **istatistik** \n-> Botun istatistiğini gösterir.
- **sonmesaj** \n-> Yazdığınız son mesajı gösterir.
+ **e!davet** \n-> Botu davet edersiniz.
+ **e!shardbilgi** \n-> Botun shard bilgilerini gösterir.
+ **e!pp** \n-> Etiketlediğiniz kişinin avatarını gösterir.
+ **e!randompp** \n-> Botun ekli olduğu sunuculardaki her hangi birinin avatarını atar.
+ **e!öneri** \n-> Bota öneri belirtirsiniz.
+ **e!istatistik** \n-> Botun istatistiğini gösterir.
+ **e!sonmesaj** \n-> Yazdığınız son mesajı gösterir.
 `)
  .setTimestamp()
  message.channel.send(AsreaperEmbed)

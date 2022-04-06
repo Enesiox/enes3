@@ -26,7 +26,7 @@ let i = message.guild.shardID
     const ayarlar = require("../ayarlar.json");
     const embed = new Discord.MessageEmbed()
       .setDescription(
-        `Sanırım bir sorun var! Bunu yetkililere bildir!\nDestek Sunucusu: [Tıkla!](https://discord.gg/tZaxBf2z73) \nHata kodu: ${err}`
+        `Sanırım bir sorun var! Bunu yetkililere bildir!\nDestek İçin DM'Den Ulaş : En3s#1234 \nHata kodu: ${err}`
       )
       .setColor("RED")
       .setThumbnail(client.user.avatarURL())

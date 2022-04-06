@@ -346,7 +346,7 @@ message.channel.send("Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabi
 client.on('clickButton', async (button) => {
   if (button.id === 'yardımmenü') {
     await button.defer(true);
-    button.channel.send(`• e!kullanıcı: **Kullanıcı yardım menüsünü gösterir.**\n > • e!moderasyon: **Moderasyon yardım menüsünü gösterir.**\n > • e!kayıtsistemi: ** Kayıt sistemi yardım menüsünü gösterir.**\n > • e!korumasistemi** Koruma sistemi yardım menüsünü gösterir.**\n > • !logosistemi: ** Logo sistemi yardım menüsünü gösterir.**\n > • e!çekilişsistemi: ** Çekiliş sistemi yardım menüsünü gösterir.**\n > • e!özelodasistemi: ** Özel Oda sistemi yardım menüsünü gösterir.** \n > • e!profilsiistemi: **Profil sistemi yardım menüsünü gösterir.** \n > • e!ekonomisistemi: ** Ekonomi sistemi yardım menüsünü gösterir.**  \n > • e!radyo: ** Radyo sistemi yardım menüsünü gösterir.** \n > • e!müzikyardım: ** Müzik Sistemini Gösterir!**`);
+    button.channel.send(`**ÜLKÜCÜ OCAKLARI YARDIM SİSTEMİ** \n • e!kullanıcı: **Kullanıcı yardım menüsünü gösterir.**\n > • e!moderasyon: **Moderasyon yardım menüsünü gösterir.**\n > • e!kayıtsistemi: ** Kayıt sistemi yardım menüsünü gösterir.**\n > • e!korumasistemi** Koruma sistemi yardım menüsünü gösterir.**\n > • e!logosistemi: ** Logo sistemi yardım menüsünü gösterir.**\n > • e!çekilişsistemi: ** Çekiliş sistemi yardım menüsünü gösterir.**\n > • e!özelodasistemi: ** Özel Oda sistemi yardım menüsünü gösterir.** \n > • e!profilsistemi: **Profil sistemi yardım menüsünü gösterir.** \n > • e!ekonomisistemi: ** Ekonomi sistemi yardım menüsünü gösterir.**  \n \n Developed by en3swashere? `);
     return button.message.edit({
     })
   }
