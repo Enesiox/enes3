@@ -8,15 +8,13 @@ module.exports = client => {
  setInterval(function() {
 }, 8000);
   var msgArray = [
-"Gweep Creative",
-"Abone OL!",
-"Like AT!",
-    "Gweep Creative Sunar"
+"En3s",
+    "En3s the Best?"
  ];
 
  setInterval(() => {
   var rastgeleOyun = Math.floor(Math.random() * msgArray.length);
-  client.user.setActivity(`${msgArray[rastgeleOyun]}`, { type: 'STREAMING' ,  url: 'https://www.twitch.tv/gweepcreative' })
+  client.user.setActivity(`${msgArray[rastgeleOyun]}`, { type: 'STREAMING' ,  url: 'https://www.twitch.tv/xwasee' })
 }, 5000);
-    console.log(`Bot Hazır | youtube.com/GweepCreativeOfficial`);
+    console.log(`Bot Hazır `);
 }
