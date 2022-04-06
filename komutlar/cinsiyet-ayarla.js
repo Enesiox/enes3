@@ -6,13 +6,13 @@ exports.run = async (client, message, args) => {
 
 let cinsiyet = args[0]
 if (!cinsiyet) return message.channel.send(
-      "**Gweep Creative** \n  \n**Lütfen cinsiyetinizi belirtin.** \n **Örnek:** **!cinsiyet-ayarla** `(Cinsiyet)` \n`**Tüm komutlara erişmek için -> !yardım** \n\n**Asreaper**"
+      "**| E N 3 S |** \n  \n**Lütfen cinsiyetinizi belirtin.** \n **Örnek:** **e!cinsiyet-ayarla** `(Cinsiyet)` \n`**Tüm komutlara erişmek için -> !yardım** \n\n** ÜlkücüOcakları**"
     );
 
  db.set(`AsreaperCinsiyet_${message.author.id}`, cinsiyet)
-  message.channel.send("**Gweep Creative** \n**------------------------------------**  \n **• Cinsiyet başarıyla ayarlandı.** \n **• Belirtilen Cinsiyet ->** `" + 
+  message.channel.send("** | E N 3 S |** \n**------------------------------------**  \n **• Cinsiyet başarıyla ayarlandı.** \n **• Belirtilen Cinsiyet ->** `" + 
   cinsiyet +
-  "` \n`• !yardım` **Yazarak tüm komutlara erişebilirsiniz.** \n **------------------------------------**\n**Gweep Creative**"
+  "` \n`• !yardım` **Yazarak tüm komutlara erişebilirsiniz.** \n **------------------------------------**\n**| E N 3 S |**"
   );
 
 

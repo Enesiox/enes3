@@ -19,14 +19,14 @@ exports.run = (client, message) => {
 
 
 `)
- .setFooter(`Gweep Creative Deneme`)
+ .setFooter(`E N 3 S `)
  .setTimestamp()
  message.channel.send(GweepEmbed)
 }
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['yardım-ekonomi'],
   kategori: "Bot",
   permLevel: 0
 };

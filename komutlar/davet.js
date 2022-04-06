@@ -3,7 +3,7 @@ const GweepClient = new GweepDiscord.Client();
 exports.run = (client, message) => {
   const GweepEmbed = new GweepDiscord.MessageEmbed();
   GweepEmbed.setColor(0x36393F)
-  GweepEmbed.setDescription(` Gweep Creative davet etmek için [buraya](Link) tıkla!`)
+  GweepEmbed.setDescription(` Beni davet etmek için [buraya](https://discord.com/api/oauth2/authorize?client_id=961257960993083402&permissions=8&scope=bot) tıkla!`)
 
   message.channel.send(GweepEmbed)
 }

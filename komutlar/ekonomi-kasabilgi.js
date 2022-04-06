@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
   const kasasayisi = kasalar.length
   const kasaidembeds = new Discord.MessageEmbed()
   .setTitle(`Bir kasa İD si girmelisin!`)
-  .setFooter(`Kasa listesine bakmak için: ${client.ekoayarlar.botunuzunprefixi}kasalar`)
+  .setFooter(`Kasa listesine bakmak için: e!kasalar`)
   .setColor(client.ekoayarlar.renk)
   if(!kasaid) return message.channel.send(kasaidembeds)
   if(kasaid > kasasayisi) return message.channel.send(kasaidembeds)
@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
   const embed = new Discord.MessageEmbed()
   .addField(`Kasa Bilgisi (İD: ${kasaid})`, `${kasalarfilter}`)
   .addField(`İçindekiler;`, `${kasalariçindekilerfilter}`)
-  .setFooter(`Kasa listesine bakmak için: ${client.ekoayarlar.botunuzunprefixi}kasalar`)
+  .setFooter(`Kasa listesine bakmak için: e!kasalar`)
   .setColor(client.ekoayarlar.renk)
   message.channel.send(embed)
   

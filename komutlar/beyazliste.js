@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const db = require('quick.db');
 
 exports.run = async (client, message, args) => {
-if(message.author.id !== "602196747879448577") if(message.author.id !== "602196747879448577") return message.channel.send("hoop bilader sahip komutu bu");
+if(message.author.id !== "949634166851502080") if(message.author.id !== "949634166851502080") return message.channel.send("hoop bilader sahip komutu bu enes misin sen ?");
   let user = args[0]
   if (!user) {
     let e = new Discord.MessageEmbed()
@@ -19,7 +19,7 @@ if(message.author.id !== "602196747879448577") if(message.author.id !== "6021967
     .setColor("RANDOM")
     .setDescription(`<@${user}> adlı kullanıcı başarıyla karalisteden çıkartıldı!`)
   return message.channel.send({embed: embed})
- //if (client.users.cache.get(user).send(` <@${message.author.id}> adlı yetkilimiz tarafından beyazlisteye alındın! Artık Gweep Creative komutlarını kullanabilirsin.`)){
+ //if (client.users.cache.get(user).send(` <@${message.author.id}> adlı yetkilimiz tarafından beyazlisteye alındın! Artık bu komutlarını kullanabilirsin.`)){
  // } else return
   
   
