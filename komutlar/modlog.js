@@ -14,7 +14,7 @@ let logkanal = await db.fetch(`log_${message.guild.id}`)
     return
   }
   
-if (!logk) return message.channel.send(`Yanlış kullanım doğru kullanım: !mod-log #kanal`);
+if (!logk) return message.channel.send(`Yanlış kullanım doğru kullanım: e!mod-log #kanal`);
 
 db.set(`log_${message.guild.id}`, logk.id)
 

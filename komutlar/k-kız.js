@@ -28,7 +28,7 @@ const başarılı = new discord.MessageEmbed()
 .addField(`Kullanıcının ismi:`, `${isim}`, true)
 .addField(`Kullanıcının yaşı:`, `${yaş}`, true)
 .setThumbnail(member.avatarURL)
-.setFooter(`Gweep Creative`)
+.setFooter(`| E N 3 S |`)
 message.channel.send(başarılı)
 db.add(`kayıtsayı_${message.author.id}`, 1)
 }
