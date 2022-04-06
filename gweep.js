@@ -17,7 +17,7 @@ const http = require("http");
 const express = require("express");
 const app = express();
 app.get("/", (request, response) => {
-  console.log("Gweep Creative pinglendi.");
+  console.log("En3s pinglendi.");
   response.sendStatus(200);
 });
 //app.listen(8000);
@@ -126,13 +126,13 @@ client.login(process.env.TOKEN)
 //////////////////////////////////////////////
 client.ayarlar = {
 "durum":"dnd",//online , idle , dnd 
-"oynuyor":"Youtube: Gweep Creative",
+"oynuyor":"En3swashere?",
 }
 client.ekoayarlar = {
   parabirimi: "TL", //Para Birimi TL İsterseniz Dolar Euro Vb. Para Birimleri Girebilirsiniz.
-  botunuzunprefixi: "!",
-  botunuzunidsi: "782983274830102528",
-  botismi: "V12 Ekonomi Botu",
+  botunuzunprefixi: "e!",
+  botunuzunidsi: "961257960993083402",
+  botismi: "En3s V12",
   renk: "RANDOM", //İNGİLİZCE TERCİH ETTİĞİNİZ RENGİ YAZINIZ! EĞER BÖYLE BIRAKIRSANIZ RASTGELE ATAR!
   isimsiz: "Bilinmiyor", //İSİMSİZ KİŞİLERİN HANGİ İSİM İLE GÖZÜKECEĞİNİ BELİRLEYEBİLİRSİNİZ!
   rastgelepara: true, //EĞER BUNU TRUE YAPARSANIZ RASTGELE PARA VERME ÖZELLİĞİ AKTİF OLUR VE GÜNLÜK PARALARI RASTGELE VERİR!
@@ -141,7 +141,7 @@ client.ekoayarlar = {
   günlükpara: 50, //EĞER RASTGELE PARAYI TRUE YAPTIYSANIZ BURAYI ELLEMENİZE GEREK YOK!
   dbloy: false, //EĞER BOTUNUZ DBL (DİSCORD BOT LİST) DE KAYITLIYSA GÜNLÜK ÖDÜL ALMAK İÇİN OY İSTER FALSE KAPALI, TRUE AKTİF DEMEK!
   dblkey: "KEY", //EĞER DBLOY U AKTİF ETMEDİYSENİZ BURAYA KEY EKLEMENİZE GEREK YOK EĞER AKTİF ETTİYSENİZ DBL SİTESİNDEN BULABİLİRSİNİZ!
-  dblmsj: "Bu komutu kullanabilmek için bota oy vermelisiniz. Oy vermek için !oyver", //EĞER DBLOY U AKTİF ETMEDİYSENİZ BURAYA MESAJ YAZMANIZA GEREK YOK! EĞER AKTİF ETTİYSENİZ BOTA OY VERMEK İÇİN HANGİ MESAJI YAZACAĞINI AYARLAYABİLİRSİNİZ.
+  dblmsj: "Bu komutu kullanabilmek için bota oy vermelisiniz. Oy vermek için e!oyver", //EĞER DBLOY U AKTİF ETMEDİYSENİZ BURAYA MESAJ YAZMANIZA GEREK YOK! EĞER AKTİF ETTİYSENİZ BOTA OY VERMEK İÇİN HANGİ MESAJI YAZACAĞINI AYARLAYABİLİRSİNİZ.
   başlangıçparası: 50, //EĞER RASTGELE PARAYI TRUE YAPTIYSANIZ BURAYI ELLEMENİZE GEREK YOK!
   admin: ["721126378833051670"]//["id","",""]
 }
@@ -323,7 +323,7 @@ client.on("roleDelete", async role => {
 const disbut = require('discord-buttons')(client);
 
 client.on('message', async (message) => {
-    if (message.content.startsWith('!yardım')) {
+    if (message.content.startsWith('e!yardım')) {
         let button = new disbut.MessageButton()
         .setStyle("green")
         .setLabel('Yardım') 
@@ -346,16 +346,8 @@ message.channel.send("Yardım Menüsüne Hoş Geldin | Aşağıdan Seçim Yapabi
 client.on('clickButton', async (button) => {
   if (button.id === 'yardımmenü') {
     await button.defer(true);
-    
-         let yt = new disbut.MessageButton()
-        .setStyle('url')
-        .setLabel('Gweep Craetive Youtube kanalımıza abone ol!')
-        .setURL('https://youtube.com/GweepCreativeOfficial')
-        .setID('ytt') 
-         
-    button.channel.send(`• !kullanıcı: **Kullanıcı yardım menüsünü gösterir.**\n > • !moderasyon: **Moderasyon yardım menüsünü gösterir.**\n > • !kayıtsistemi: ** Kayıt sistemi yardım menüsünü gösterir.**\n > • !korumasistemi** Koruma sistemi yardım menüsünü gösterir.**\n > • !logosistemi: ** Logo sistemi yardım menüsünü gösterir.**\n > • !çekilişsistemi: ** Çekiliş sistemi yardım menüsünü gösterir.**\n > • !özelodasistemi: ** Özel Oda sistemi yardım menüsünü gösterir.** \n > • !profilsiistemi: **Profila sistemi yardım menüsünü gösterir.** \n > • !ekonomisistemi: ** Ekonomi sistemi yardım menüsünü gösterir.**  \n > • !radyo: ** Radyo sistemi yardım menüsünü gösterir.** \n > • !müzikyardım: ** Müzik Sistemini Gösteir!**`);
+    button.channel.send(`• e!kullanıcı: **Kullanıcı yardım menüsünü gösterir.**\n > • e!moderasyon: **Moderasyon yardım menüsünü gösterir.**\n > • e!kayıtsistemi: ** Kayıt sistemi yardım menüsünü gösterir.**\n > • e!korumasistemi** Koruma sistemi yardım menüsünü gösterir.**\n > • !logosistemi: ** Logo sistemi yardım menüsünü gösterir.**\n > • e!çekilişsistemi: ** Çekiliş sistemi yardım menüsünü gösterir.**\n > • e!özelodasistemi: ** Özel Oda sistemi yardım menüsünü gösterir.** \n > • e!profilsiistemi: **Profil sistemi yardım menüsünü gösterir.** \n > • e!ekonomisistemi: ** Ekonomi sistemi yardım menüsünü gösterir.**  \n > • e!radyo: ** Radyo sistemi yardım menüsünü gösterir.** \n > • e!müzikyardım: ** Müzik Sistemini Gösterir!**`);
     return button.message.edit({
-      button: yt
     })
   }
     if (button.id === 'click_to_function2') {
@@ -364,7 +356,7 @@ client.on('clickButton', async (button) => {
        let davett = new disbut.MessageButton()
         .setStyle('url')
         .setLabel('Botu Davet Et!')
-        .setURL('https://discord.com/oauth2/authorize?client_id=&permissions=8&scope=bot')
+        .setURL('https://discord.com/api/oauth2/authorize?client_id=961257960993083402&permissions=8&scope=bot')
         .setID('davett') 
         button.channel.send(`Botu Davet Et`)
         return button.message.edit({
@@ -736,7 +728,7 @@ client.on("guildMemberAdd", async member => {
 const Asreaper = new Discord.MessageEmbed()
 .setColor("BLUE")
 .setTimestamp()
-.setFooter(`Gweep Creative`)
+.setFooter(`| E N 3 S |`)
 .setDescription( " **" +
           member.user.username +
           "** hoş geldin! Otomatik rolün verildi. Seninle beraber **" +
@@ -1418,14 +1410,14 @@ client.on("guildMemberAdd", async(member) => {
 client.on('guildCreate', guild => {
 
     let asreaper1 = guild.channels.filter(c => c.type === "text").random()
-    asreaper1.send("**Gweep Creative Botunu Sunucuya Eklediğiniz İçin Teşekkürler!** \n !yardım Yazarak Yardım Menüsüne Erişebilirsiniz!");
+    asreaper1.send("**Enes Botunu Sunucuya Eklediğiniz İçin Teşekkürler!** \n e!yardım Yazarak Yardım Menüsüne Erişebilirsiniz!");
 
 });
 client.on("guildCreate", async guild => {
   const asreaper2 = [
     "Botumuzu Sunucuna Eklediğin İçin Teşekkürler!",
-    "Bu Bot Asreaper Tarafından Geliştirilmiştir!",
-    '!yardım Yazarak Yardım Menüsüne Ulaşabilirsin'
+    "Bu Bot En3swashere Tarafından Geliştirilmiştir!",
+    'e!yardım Yazarak Yardım Menüsüne Ulaşabilirsin'
   ];
   guild.owner.send(asreaper2);
   console.log(`LOG: ${guild.name}. sunucuya katıldım!`);

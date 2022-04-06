@@ -5,7 +5,7 @@ const ayarlar = require('../ayarlar.json')
 
 
 exports.run = async (client, message, args) => {
-  if(!client.ekoayarlar.admin.includes(message.author.id)) return message.reply(`bunu yapabilmek için gerekli yetkiye sahip değilsin!`)
+  if(!client.ekoayarlar.admin.includes(message.author.id)) return message.reply(`Bunu yapabilmek için gerekli yetkiye sahip değilsin!`)
   const silinecekkllnc = message.mentions.members.first();
   if(!silinecekkllnc) return message.channel.send(`Bir kullanıcı belirtmelisin!`)
   const bakiye = await db.fetch(`bakiyecdare-${silinecekkllnc.id}`);

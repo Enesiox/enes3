@@ -22,7 +22,7 @@ if(!member2) return message.reply("Bir Kullanıcı Etiketlermisin.")
         `Bakmak istediğin kullanıcının bir hesabı bulunmamakta.`
       );
     message.reply(
-      `İlk olarak hesap oluşturmalısın. ${client.ekoayarlar.botunuzunprefixi}hesap-oluştur <Hesap İsmi>`
+      `İlk olarak hesap oluşturmalısın. e!hesap-oluştur <Hesap İsmi>`
     );
   } else {
     if (hesapdurumu) {

@@ -6,10 +6,10 @@ exports.run = async (client, message, args) => {
   const bakiye = await db.fetch(`bakiyecdare-${message.author.id}`);
   const hesapdurumu = await db.fetch(`hesapdurumcodare-${message.author.id}`);
   const kasasayisi = kasalar.length
-  if(!hesapdurumu) return message.reply(`İlk olarak hesap oluşturmalısın. ${client.ekoayarlar.botunuzunprefixi}hesap-oluştur <Hesap İsmi>`)
+  if(!hesapdurumu) return message.reply(`İlk olarak hesap oluşturmalısın. e!hesap-oluştur <Hesap İsmi>`)
   const kasaidembeds = new Discord.MessageEmbed()
   .setTitle(`Bir kasa İD si girmelisin!`)
-  .setFooter(`Kasa listesine bakmak için: ${client.ekoayarlar.botunuzunprefixi}kasalar`)
+  .setFooter(`Kasa listesine bakmak için: e!kasalar`)
   .setColor(client.ekoayarlar.renk)
   if(!kasaid) return message.channel.send(kasaidembeds)
   if(kasaid > kasasayisi) return message.channel.send(kasaidembeds)

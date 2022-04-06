@@ -14,9 +14,9 @@ exports.run = async (client, message, args, perms) => {
   const hesapismi = await db.fetch(`hesapismiçodare-${message.author.id}`);
   
   
-  if(hesapdurumu) return message.channel.send(`Bir hesabınız bulunmakta. Geçerli hesabınızın bilgilerini öğrenmek için: \n\`${client.ekoayarlar.botunuzunprefixi}bligilerim\``);
-  if(hesapismi) return message.channel.send(`Bir hesabınız bulunmakta. Geçerli hesabınızın bilgilerini öğrenmek için: \n\`${client.ekoayarlar.botunuzunprefixi}bilgilerim\``);
-  if(!isim) return message.channel.send(`Bir isim girmelisiniz. Doğru Kullanım;\n\`${client.ekoayarlar.botunuzunprefixi}hesap-oluştur <hesap ismi>\``)
+  if(hesapdurumu) return message.channel.send(`Bir hesabınız bulunmakta. Geçerli hesabınızın bilgilerini öğrenmek için: \n\`e!bilgilerim\``);
+  if(hesapismi) return message.channel.send(`Bir hesabınız bulunmakta. Geçerli hesabınızın bilgilerini öğrenmek için: \n\`e!bilgilerim\``);
+  if(!isim) return message.channel.send(`Bir isim girmelisiniz. Doğru Kullanım;\n\`e!hesap-oluştur <hesap ismi>\``)
   if(!hesapdurumu) {
 if(!hesapismi) {
       

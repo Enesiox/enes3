@@ -13,7 +13,7 @@ exports.run = async (client, message, args) => {
   
   if(!hesapdurumu) {
     if(args[0]) return message.reply(`Bakmak istediğin kullanıcının bir hesabı bulunmamakta.`)
-    message.reply(`İlk olarak hesap oluşturmalısın. ${client.ekoayarlar.botunuzunprefixi}hesap-oluştur <Hesap İsmi>`)
+    message.reply(`İlk olarak hesap oluşturmalısın. e!hesap-oluştur <Hesap İsmi>`)
   } else {
     if(hesapdurumu) {
       if(!hesapismi) {
