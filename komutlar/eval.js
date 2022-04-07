@@ -1,24 +1,28 @@
-//---Bu Kod komutlar klasörüne atılacak atılacaktır.
-//CodeMareFi tarafından hazırlanmıştır - - - Ekleyen //Sadista
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-const Discord = require("discord.js");
-
-exports.run = async (client, message, args) => {
-  
-  if(!args[0]) return
+exports.run = (client, message, args) => {
+      if(message.author.id !== "348097494548348940") return;
+    if (args[0] === "client.token")
+    return message.channel.sendMessage('\`\`\`Sansür istediğinizi yazın KEYTR\`\`\`');
     try {
-        let codein = args.join(" ");
-        let code = eval(codein);
+      var code = args.join(" ");
+      var evaled = eval(code);
 
-        if (typeof code !== 'string')
-            code = require('util').inspect(code, { depth: 0 });
-        let çıkış = (`\`\`\`js\n${code}\n\`\`\``)
-        message.channel.send(çıkış)
-    } catch(e) {
-        message.channel.send(`\`\`\`js\n${e}\n\`\`\``);
+      if (typeof evaled !== "string")
+        evaled = require("util").inspect(evaled);
+
+      message.channel.sendCode("xl", clean(evaled));
+    } catch (err) {
+      message.channel.sendMessage(`\`HATA\` \`\`\`xl\n${clean(err)}\n\`\`\``);
     }
+function clean(text) {
+  if (typeof(text) === "string")
+    return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
+  else
+      return text;
 }
-
+    }
 
 exports.conf = {
   enabled: true,
@@ -29,6 +33,10 @@ exports.conf = {
 
 exports.help = {
   name: 'eval',
-  description: 'Bot adminlerinin bot üzerinde kod test etmesini sağlar.',
-  usage: 'eval kod'
+  description: 'Kod denemek için kullanılır.',
+  usage: 'eval [kod]'
 };
+PeaceVII
+27 Eyl 2018
+#2
+Slo
